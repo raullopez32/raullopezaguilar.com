@@ -1,0 +1,72 @@
+---
+import '../../styles/global.css';
+const currentYear = new Date().getFullYear();
+const siteUrl = 'https://raullopezaguilar.com';
+const title = 'Raul Lopez Aguilar | Consultoría Tecnológica y Arquitectura de Soluciones';
+const description = 'Consultor tecnológico especializado en arquitectura de soluciones, cloud, integración de sistemas, backend y liderazgo técnico.';
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href={`${siteUrl}/es/`} />
+    <link rel="alternate" hreflang="en" href={siteUrl} />
+    <link rel="alternate" hreflang="es" href={`${siteUrl}/es/`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={`${siteUrl}/es/`} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="#top">RLA <small>Technology Consulting</small></a>
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="#services">Servicios</a><a href="#work">Proyectos</a><a href="#about">Perfil</a><a href="#contact">Contacto</a><a class="lang" href="/">EN</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" style="border-top:0">
+        <div class="container">
+          <div class="eyebrow">Raul Lopez Aguilar · Principal Technology Consultant</div>
+          <h1>Diseño soluciones tecnológicas que conectan negocio, cloud y software.</h1>
+          <p class="lead">Ayudo a organizaciones a tomar mejores decisiones técnicas, integrar sistemas complejos y convertir problemas operativos en soluciones escalables, manteniendo capacidad hands-on cuando la implementación lo requiere.</p>
+          <div class="actions"><a class="btn primary" href="#work">Ver proyectos</a><a class="btn" href="#contact">Trabajemos juntos</a></div>
+          <div class="meta-row"><span>Arquitectura de Soluciones</span><span>Cloud</span><span>Integración de Sistemas</span><span>Asesoría Tecnológica</span><span>México · Internacional</span></div>
+        </div>
+      </section>
+
+      <section id="services"><div class="container">
+        <div class="section-head"><h2>Tecnología con contexto de negocio.</h2><p>Trabajo entre arquitectura, implementación y toma de decisiones. Puedo analizar el problema, definir un camino técnico práctico, coordinar la entrega y entrar a código, APIs, cloud y troubleshooting cuando hace falta.</p></div>
+        <div class="grid">
+          <article class="card service"><span class="num">01</span><h3>Arquitectura de Soluciones</h3><p>Revisión de arquitectura, diseño técnico, modernización y decisiones escalables para sistemas críticos.</p></article>
+          <article class="card service"><span class="num">02</span><h3>Cloud & Backend Engineering</h3><p>Workloads en AWS y GCP, APIs en Python, serverless, contenedores, bases de datos, CI/CD e implementación backend.</p></article>
+          <article class="card service"><span class="num">03</span><h3>Integración de Sistemas</h3><p>APIs, identidad, ERP, e-commerce, flujos de datos y plataformas empresariales integradas de forma mantenible.</p></article>
+          <article class="card service"><span class="num">04</span><h3>Asesoría Tecnológica</h3><p>Build vs buy, evaluación de proveedores, due diligence técnica, troubleshooting y roadmaps tecnológicos pragmáticos.</p></article>
+        </div>
+      </div></section>
+
+      <section id="work"><div class="container">
+        <div class="section-head"><h2>Proyectos y laboratorios técnicos.</h2><p>Los proyectos públicos funcionan como evidencia técnica. El trabajo empresarial se presenta a alto nivel para proteger confidencialidad y aun así mostrar el tipo y escala de problemas resueltos.</p></div>
+        <div class="grid">
+          <article class="card project"><span class="num">LAB PÚBLICO</span><h3>Google Cloud Run Scalability & Load Testing</h3><p>Servicio FastAPI containerizado y desplegado en Google Cloud Run para evaluar concurrencia y distintas configuraciones de escalamiento.</p><div class="tags"><span class="tag">Google Cloud</span><span class="tag">Cloud Run</span><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">k6</span></div><div class="project-links"><a href="https://github.com/raullopez32/ticket-sale-gcp" target="_blank" rel="noreferrer">GitHub ↗</a></div></article>
+          <article class="card project"><span class="num">LAB PÚBLICO</span><h3>FastAPI + PostgreSQL REST API</h3><p>Proyecto backend con diseño REST, persistencia relacional, pruebas automatizadas y entorno containerizado.</p><div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">SQLAlchemy</span><span class="tag">pytest</span><span class="tag">Docker</span></div><div class="project-links"><a href="https://github.com/raullopez32/python-fastapi-mvp" target="_blank" rel="noreferrer">GitHub ↗</a></div></article>
+          <article class="card project"><span class="num">CASO EMPRESARIAL</span><h3>Arquitectura Centralizada de Identidad</h3><p>Diseño de autenticación centralizada con Azure AD B2C y SAML para más de 35,000 usuarios, habilitando acceso seguro e integraciones con terceros.</p><div class="tags"><span class="tag">Identity</span><span class="tag">Azure AD B2C</span><span class="tag">SAML</span><span class="tag">Integración</span></div></article>
+          <article class="card project"><span class="num">CASO EMPRESARIAL</span><h3>Onboarding Serverless de Usuarios</h3><p>Solución serverless para más de 5,000 usuarios que redujo aproximadamente 70% del esfuerzo manual de onboarding.</p><div class="tags"><span class="tag">AWS Lambda</span><span class="tag">EventBridge</span><span class="tag">Automation</span><span class="tag">Serverless</span></div></article>
+        </div>
+      </div></section>
+
+      <section id="about"><div class="container"><div class="section-head"><h2>Profundidad técnica. Ownership tecnológico.</h2><p>Mi carrera evolucionó de desarrollo de software a cloud engineering, liderazgo técnico y ownership más amplio de tecnología. Hoy trabajo entre arquitectura, integraciones, cloud, sistemas empresariales, proveedores y ejecución técnica.</p></div><div class="experience"><div class="card"><span class="num">TRAYECTORIA</span><h3>Software → Cloud → Liderazgo → Arquitectura</h3><p>Experiencia en ingeniería hands-on, sistemas cloud-native, integraciones empresariales, equipos técnicos y decisiones tecnológicas con stakeholders ejecutivos.</p></div><div class="card"><span class="num">ENFOQUE</span><h3>Arquitectura práctica y ejecución</h3><p>Aporto más valor cuando una empresa necesita entender el problema, definir una solución, cuestionar proveedores y conservar control sobre los detalles de implementación.</p></div></div></div></section>
+
+      <section id="contact" class="contact"><div class="container"><div class="eyebrow">Disponible para proyectos seleccionados de consultoría</div><h2>¿Tienes un problema tecnológico que valga la pena resolver?</h2><p>Arquitectura, cloud, integraciones, assessment técnico y sistemas complejos. Empecemos con una conversación breve sobre el problema y cómo debería verse el resultado.</p><div class="actions" style="justify-content:center"><a class="btn primary" href="https://www.linkedin.com/in/raul-lopez-aguilar/" target="_blank" rel="noreferrer">Contactar por LinkedIn</a><a class="btn" href="https://github.com/raullopez32" target="_blank" rel="noreferrer">Ver GitHub</a></div></div></section>
+    </main>
+
+    <footer class="footer"><div class="container footer-inner"><span>© {currentYear} Raul Lopez Aguilar</span><span>Technology Consulting & Advisory</span></div></footer>
+  </body>
+</html>
