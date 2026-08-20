@@ -1,0 +1,156 @@
+---
+import '../styles/global.css';
+const currentYear = new Date().getFullYear();
+const siteUrl = 'https://raullopezaguilar.com';
+const title = 'Raul Lopez Aguilar | Technology Consulting & Solution Architecture';
+const description = 'Technology consultant focused on solution architecture, cloud, systems integration, backend engineering and technical leadership.';
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Raul Lopez Aguilar',
+  url: siteUrl,
+  jobTitle: 'Principal Technology Consultant',
+  sameAs: [
+    'https://www.linkedin.com/in/raul-lopez-aguilar/',
+    'https://github.com/raullopez32'
+  ],
+  knowsAbout: ['Solution Architecture','Cloud Computing','Systems Integration','Backend Engineering','Technical Leadership']
+};
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href={siteUrl} />
+    <link rel="alternate" hreflang="en" href={siteUrl} />
+    <link rel="alternate" hreflang="es" href={`${siteUrl}/es/`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={siteUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>{title}</title>
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)}></script>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="#top">RLA <small>Technology Consulting</small></a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a class="lang" href="/es/">ES</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" style="border-top:0">
+        <div class="container">
+          <div class="eyebrow">Raul Lopez Aguilar · Principal Technology Consultant</div>
+          <h1>I design technology solutions that connect business, cloud and software.</h1>
+          <p class="lead">I help organizations make better technical decisions, integrate complex systems and turn operational problems into scalable technology solutions — while remaining hands-on when implementation matters.</p>
+          <div class="actions">
+            <a class="btn primary" href="#work">View selected work</a>
+            <a class="btn" href="#contact">Work with me</a>
+          </div>
+          <div class="meta-row">
+            <span>Solution Architecture</span><span>Cloud</span><span>Systems Integration</span><span>Technical Advisory</span><span>Mexico · International</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <div class="section-head">
+            <h2>Technology work with business context.</h2>
+            <p>My work sits between architecture, implementation and decision-making. I can assess the problem, define a practical technical path, coordinate delivery and step into code, APIs, cloud services and troubleshooting when needed.</p>
+          </div>
+          <div class="grid">
+            <article class="card service"><span class="num">01</span><h3>Solution Architecture</h3><p>Architecture reviews, technical design, modernization paths and scalable solution decisions across business-critical systems.</p></article>
+            <article class="card service"><span class="num">02</span><h3>Cloud & Backend Engineering</h3><p>AWS and GCP workloads, Python APIs, serverless systems, containers, databases, CI/CD and backend implementation.</p></article>
+            <article class="card service"><span class="num">03</span><h3>Systems Integration</h3><p>APIs, identity, ERP, e-commerce, data workflows and enterprise platforms connected into maintainable operating systems.</p></article>
+            <article class="card service"><span class="num">04</span><h3>Technology Advisory</h3><p>Build-vs-buy analysis, vendor evaluation, technical due diligence, troubleshooting and pragmatic technology roadmaps.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="work">
+        <div class="container">
+          <div class="section-head">
+            <h2>Selected work & technical labs.</h2>
+            <p>Public projects are used as technical evidence. Enterprise work is described at a high level to preserve confidentiality while showing the scale and type of problems solved.</p>
+          </div>
+          <div class="grid">
+            <article class="card project">
+              <span class="num">PUBLIC LAB</span>
+              <h3>Google Cloud Run Scalability & Load Testing</h3>
+              <p>Containerized FastAPI workload deployed to Google Cloud Run to evaluate application behavior under concurrent traffic and different scaling configurations.</p>
+              <div class="tags"><span class="tag">Google Cloud</span><span class="tag">Cloud Run</span><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">k6</span></div>
+              <div class="project-links"><a href="https://github.com/raullopez32/ticket-sale-gcp" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+            </article>
+            <article class="card project">
+              <span class="num">PUBLIC LAB</span>
+              <h3>FastAPI + PostgreSQL REST API</h3>
+              <p>Backend project covering REST API design, relational persistence, automated tests and containerized local environments.</p>
+              <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">SQLAlchemy</span><span class="tag">pytest</span><span class="tag">Docker</span></div>
+              <div class="project-links"><a href="https://github.com/raullopez32/python-fastapi-mvp" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+            </article>
+            <article class="card project">
+              <span class="num">ENTERPRISE CASE</span>
+              <h3>Centralized Identity Architecture</h3>
+              <p>Designed centralized authentication using Azure AD B2C and SAML for 35,000+ users, enabling secure access and third-party platform integrations.</p>
+              <div class="tags"><span class="tag">Identity</span><span class="tag">Azure AD B2C</span><span class="tag">SAML</span><span class="tag">Integration</span></div>
+            </article>
+            <article class="card project">
+              <span class="num">ENTERPRISE CASE</span>
+              <h3>Serverless User Onboarding</h3>
+              <p>Designed a serverless onboarding solution supporting 5,000+ users and reducing manual onboarding effort by approximately 70%.</p>
+              <div class="tags"><span class="tag">AWS Lambda</span><span class="tag">EventBridge</span><span class="tag">Automation</span><span class="tag">Serverless</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="section-head">
+            <h2>Engineering depth. Technology ownership.</h2>
+            <p>My career evolved from software development into cloud engineering, technical leadership and broader technology ownership. Today I work across architecture, integrations, cloud, business systems, vendors and technical execution.</p>
+          </div>
+          <div class="experience">
+            <div class="card"><span class="num">PROFILE</span><h3>Software → Cloud → Leadership → Architecture</h3><p>Experience spans hands-on engineering, cloud-native systems, enterprise integrations, technical teams and executive-facing technology decisions.</p></div>
+            <div class="card"><span class="num">CURRENT FOCUS</span><h3>Practical architecture and delivery</h3><p>I am most useful where a company needs someone who can understand the business problem, define the solution, challenge vendors and still understand the implementation details.</p></div>
+          </div>
+          <div class="grid" style="margin-top:18px">
+            <div class="stat" style="grid-column:span 3"><strong>9+</strong><span>years across software and technology</span></div>
+            <div class="stat" style="grid-column:span 3"><strong>35K+</strong><span>users in identity architecture</span></div>
+            <div class="stat" style="grid-column:span 3"><strong>5K+</strong><span>users supported in onboarding automation</span></div>
+            <div class="stat" style="grid-column:span 3"><strong>10+</strong><span>engineers led and mentored</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="eyebrow">Available for selected consulting engagements</div>
+          <h2>Have a technology problem worth solving?</h2>
+          <p>Architecture, cloud, integrations, technical assessments and complex systems work. Start with a short conversation about the problem and what success should look like.</p>
+          <div class="actions" style="justify-content:center">
+            <a class="btn primary" href="https://www.linkedin.com/in/raul-lopez-aguilar/" target="_blank" rel="noreferrer">Contact on LinkedIn</a>
+            <a class="btn" href="https://github.com/raullopez32" target="_blank" rel="noreferrer">View GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner"><span>© {currentYear} Raul Lopez Aguilar</span><span>Technology Consulting & Advisory</span></div>
+    </footer>
+  </body>
+</html>
